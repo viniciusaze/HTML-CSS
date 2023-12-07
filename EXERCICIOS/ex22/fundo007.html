@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            
+            background-color: blueviolet;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+        }
+
+        #conteudo{
+            position: absolute;
+            height: 200px;
+            width: 400px;
+
+            background-color: cyan;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+        /*Para alinhar verticalmente as caixas, a parte de fora(container) sempre vai ter posicionamento relativo, e a parte de dentro(conteudo) tera um posicionamento absoluto*/
+
+        /*Posicionamento absoluto permite colocar as propriedades left e top para movimentar a caixa*/
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

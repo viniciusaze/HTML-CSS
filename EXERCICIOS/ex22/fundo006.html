@@ -12,11 +12,16 @@
             background-position: center top;
             background-repeat: repeat-y;
             background-size: cover; /*cover permite a imagem cobrir toda a tela, mesmo que corte a imagem*/
+            background-attachment: fixed; /*fixed para fixar a imagem no fundo*/
+
+            /*Shorthand - background
+            color > image > position > repeat > [size] > attachment
+            */
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 15px;
             margin: auto;
             border: 1px solid black;
